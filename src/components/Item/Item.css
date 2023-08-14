@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: azure;
+    outline: none;
+    border-radius: 10px;
+}
+
+.item div {
+    font: inherit;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(7, 6, 6);
+}
+
+.crossed {
+    text-decoration: line-through;
+}

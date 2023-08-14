@@ -1,0 +1,9 @@
+input {
+    width: 20rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    background-color: aliceblue;
+}
