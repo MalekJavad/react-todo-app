@@ -32,7 +32,7 @@ const Todo = () => {
     
     const crossItem = (item) => {
         let current_tasks = [...tasks];
-        current_tasks.map((task) => {
+        current_tasks.forEach((task) => {
             if (task.title === item.title) {
                 task.complete = true;
             };
