@@ -1,9 +1,12 @@
 input {
-    width: 20rem;
+    width: 28rem;
     padding: 1rem;
     outline: none;
     border: none;
     border-radius: 15px;
     color: black;
-    background-color: aliceblue;
+    background-color: rgb(229, 242, 253);
+    margin: 1rem;
+    font: inherit;
+    direction: rtl;
 }

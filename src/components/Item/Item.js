@@ -7,15 +7,17 @@ import Button from '../../UI/Button/Button.js';
 const Item = (props) => {
     return (
         <li className="item">
-            <div className={props.complete ? "crossed" : null}>
+            <span className={props.complete ? "title crossed" : "title"}>
                 {props.title}
+            </span>
+            <div className="controls">
+                <Button className={props.complete ? "not-cross" : "cross"} buttonType="button" click={props.crossItem}>
+                    {props.complete ? "انجام نشده" : "انجام شد"}
+                </Button>
+                <Button className="delete" buttonType="button" click={props.deleteItem}>
+                    حذف
+                </Button>
             </div>
-            <Button className="cross" buttonType="button" click={props.crossItem}>
-                cross
-            </Button>
-            <Button className="delete" buttonType="button" click={props.deleteItem}>
-                delete
-            </Button>
         </li>
     );
 };

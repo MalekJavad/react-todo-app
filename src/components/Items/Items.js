@@ -12,8 +12,8 @@ const Items = (props) => {
                     <Item
                         key={item.title}
                         title={item.title}
-                        crossItem={() => props.cross(item)}
-                        deleteItem={() => props.delete(item)}
+                        crossItem={() => props.cross(item.title)}
+                        deleteItem={() => props.delete(item.title)}
                         complete={item.complete}
                     />
                 )

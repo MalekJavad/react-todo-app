@@ -5,16 +5,25 @@ button {
     color: black;
     padding: 0.5rem 2rem;
     cursor: pointer;
+    margin: 1rem;
+    font: inherit;
+    font-weight: bolder;
+    font-size: 1rem;
 }
 
 .delete {
-    background-color: rgb(238, 109, 109);
+    background-color: rgb(255, 88, 88);
+}
+
+.not-cross {
+    background-color: rgb(255, 255, 122);
 }
 
 .cross {
-    background-color: rgb(243, 243, 145);
+    background-color: rgb(141, 250, 107);
 }
 
+
 .add {
-    background-color: rgb(110, 110, 255);
+    background-color: rgb(138, 138, 253);
 }

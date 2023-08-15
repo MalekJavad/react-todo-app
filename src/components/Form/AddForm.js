@@ -13,19 +13,20 @@ const AddForm = (props) => {
     useEffect(() => {
         inputRef.current.value="";
         inputRef.current.focus();
+        setInput('')
     }
     , [props])
 
     return (
-        <div>
+        <div className="form">
             <Input 
                 refValue={inputRef} 
                 inputType="text" 
-                placeholderText="Enter your task here"
+                placeholderText="عنوان تسک خود را وارد کنید"
                 onchange={(event) => setInput(event.target.value)}
             />
-            <Button className="add" buttonType="button" click={() => {props.addItem(input); console.log('adding')}}>
-                Add
+            <Button id="Add" className="add" buttonType="button" click={() => {props.addItem(input)}}>
+                افزودن
             </Button>
         </div>
     );
