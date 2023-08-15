@@ -7,13 +7,14 @@ import Item from '../Item/Item.js';
 const Items = (props) => {
     return (
         <ul>
-            {props.data.map( (item) => {
+            {props.data.map( (item, index) => {
+                console.log(index)
                 return (
                     <Item
-                        key={item.title}
+                        key={index}
                         title={item.title}
-                        crossItem={() => props.cross(item.title)}
-                        deleteItem={() => props.delete(item.title)}
+                        crossItem={() => props.cross(index)}
+                        deleteItem={() => props.delete(index)}
                         complete={item.complete}
                     />
                 )
