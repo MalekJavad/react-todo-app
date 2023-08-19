@@ -6,7 +6,7 @@ import Button from '../../UI/Button/Button.js';
 
 const Item = (props) => {
     const liRef = useRef(null);
-    const deleteBtnAnimation = () => {
+    const deleteItemAnimation = () => {
         liRef.current.classList.add('fade-out');
         setTimeout(() => props.deleteItem(), 800)
     }
@@ -19,7 +19,7 @@ const Item = (props) => {
                 <Button className={props.complete ? "not-cross" : "cross"} buttonType="button" click={props.crossItem}>
                     {props.complete ? "انجام نشده" : "انجام شد"}
                 </Button>
-                <Button className="delete" buttonType="button" click={deleteBtnAnimation}>
+                <Button className="delete" buttonType="button" click={deleteItemAnimation}>
                     حذف
                 </Button>
             </div>
