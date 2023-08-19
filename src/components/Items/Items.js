@@ -6,19 +6,21 @@ import Item from '../Item/Item.js';
 
 const Items = (props) => {
     return (
-        <ul>
-            {props.data.map( (item, index) => {
-                return (
-                    <Item
-                        key={index}
-                        title={item.title}
-                        crossItem={() => props.cross(index)}
-                        deleteItem={() => props.delete(index)}
-                        complete={item.complete}
-                    />
-                )
-            })}
-        </ul>
+        <div className="fade">
+            <ul>
+                {props.data.map( (item, index) => {
+                    return (
+                        <Item
+                            key={index}
+                            title={item.title}
+                            crossItem={() => props.cross(index)}
+                            deleteItem={() => props.delete(index)}
+                            complete={item.complete}
+                        />
+                    )
+                })}
+            </ul>
+        </div>
     );
 };
 
