@@ -8,7 +8,6 @@ const Items = (props) => {
     return (
         <ul>
             {props.data.map( (item, index) => {
-                console.log(index)
                 return (
                     <Item
                         key={index}
