@@ -12,7 +12,7 @@ const Item = (props) => {
         setTimeout(() => {
             props.deleteItem();
             liRef.current.classList.remove('fade-out');
-        }, 800);
+        }, 500);
     }
 
     return (

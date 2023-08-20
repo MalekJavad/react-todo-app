@@ -28,7 +28,7 @@
 }
 
 .fade-out {
-    animation: fOut 0.8s linear forwards;
+    animation: fOut 0.5s linear forwards;
 }
 
 @keyframes fOut {

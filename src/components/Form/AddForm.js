@@ -13,6 +13,7 @@ const AddForm = (props) => {
 
     useEffect(() => {
         inputRef.current.value="";
+        setInput('')
         inputRef.current.focus();
         inputRef.current.addEventListener("keypress", (event) => {
             if (event.key === "Enter") {
