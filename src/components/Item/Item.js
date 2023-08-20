@@ -6,10 +6,15 @@ import Button from '../../UI/Button/Button.js';
 
 const Item = (props) => {
     const liRef = useRef(null);
+
     const deleteItemAnimation = () => {
         liRef.current.classList.add('fade-out');
-        setTimeout(() => props.deleteItem(), 800)
+        setTimeout(() => {
+            props.deleteItem();
+            liRef.current.classList.remove('fade-out');
+        }, 800);
     }
+
     return (
         <li ref={liRef} className="item">
             <span className={props.complete ? "title crossed" : "title"}>
