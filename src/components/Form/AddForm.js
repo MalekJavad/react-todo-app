@@ -12,7 +12,6 @@ const AddForm = (props) => {
     const buttonRef = useRef();
 
     useEffect(() => {
-        inputRef.current.value="";
         setInput('')
         inputRef.current.focus();
         inputRef.current.addEventListener("keypress", (event) => {
@@ -30,6 +29,7 @@ const AddForm = (props) => {
                 inputType="text" 
                 placeholderText="عنوان تسک خود را وارد کنید"
                 onchange={(event) => setInput(event.target.value)}
+                inputValue={input}
             />
             <Button id="Add" refValue={buttonRef} className="add" buttonType="button" click={() => {props.addItem(input)}}>
                 افزودن
